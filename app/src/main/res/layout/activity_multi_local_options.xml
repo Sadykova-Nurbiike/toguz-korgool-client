@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MultiLocalOptionsActivity"
+    android:background="@drawable/blank_bg">
+
+    <TextView
+        android:id="@+id/nineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="24dp"
+        android:includeFontPadding="true"
+        android:text="@string/logo_9"
+        android:textSize="150sp"
+        app:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/toguzTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/logo_toguz"
+        android:textSize="60sp"
+        app:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nineTextView" />
+
+    <TextView
+        android:id="@+id/korgoolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/logo_korgool"
+        android:textSize="60sp"
+        app:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toguzTextView" />
+
+    <Button
+        android:id="@+id/multiOptionsNewGameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:background="@android:color/transparent"
+        android:onClick="handleNewGame"
+        android:paddingLeft="20sp"
+        android:paddingTop="5sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="5sp"
+        android:tag="@string/intent_val_option_newgame"
+        android:text="@string/text_new_game"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/multiOptionsContinueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:background="@android:color/transparent"
+        android:onClick="handleNewGame"
+        android:paddingLeft="20sp"
+        android:paddingTop="5sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="5sp"
+        android:tag="@string/intent_val_option_continue"
+        android:text="@string/text_continue"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multiOptionsNewGameBtn" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

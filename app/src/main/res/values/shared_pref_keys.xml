@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MULTI STATE -->
+    <string name="multi_maxturn">maxturnMulti</string>
+    <string name="multi_turnstickup">turnstickupMulti</string>
+    <string name="multi_board">boardMulti</string>
+    <string name="multi_kazan">kazanMulti</string>
+    <string name="multi_tuz">tuzMulti</string>
+
+    <bool name="multi_turnstickup_def_val">false</bool>
+    <!-- MULTI STATE -->
+
+
+    <!--  SINGLE STATE -->
+    <string name="single_maxturn">maxturnSingle</string>
+    <string name="single_board">boardSingle</string>
+    <string name="single_kazan">kazanSingle</string>
+    <string name="single_tuz">tuzSingle</string>
+    <!-- SINGLE STATE -->
+
+
+    <!-- COMMON STATE DEF VALS -->
+    <bool name="maxturn_def_val">false</bool>
+    <string name="board_def_val">9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9,9</string>
+    <string name="kazan_def_val">0,0</string>
+    <string name="tuz_def_val">-1,-1</string>
+    <!-- COMMON STATE DEF VALS -->
+
+    <!-- SINGLE SETTINGS -->
+    <string name="single_searchdepth">searchdepth</string>
+    <string name="single_userstarts">userStarts</string>
+
+    <integer name="single_searchdepth_easy_level">2</integer>
+    <integer name="single_searchdepth_medium_level">5</integer>
+    <integer name="single_searchdepth_hard_level">9</integer>
+    <string name="single_userstarts_yes">y</string>
+    <string name="single_userstarts_no">n</string>
+    <!-- SINGLE SETTINGS -->
+
+
+</resources>

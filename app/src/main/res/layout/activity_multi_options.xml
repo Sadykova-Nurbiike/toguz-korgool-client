@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MultiOptionsActivity"
+    android:background="@drawable/blank_bg">
+
+    <TextView
+        android:id="@+id/nineTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="24dp"
+        android:includeFontPadding="true"
+        android:text="@string/logo_9"
+        android:textSize="150sp"
+        app:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/toguzTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="140dp"
+        android:text="@string/logo_toguz"
+        android:textSize="60sp"
+        app:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nineTextView" />
+
+    <TextView
+        android:id="@+id/korgoolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/logo_korgool"
+        android:textSize="60sp"
+        app:fontFamily="serif"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toguzTextView" />
+
+    <Button
+        android:id="@+id/intRandomBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:background="@android:color/transparent"
+        android:onClick="handleOption"
+        android:paddingLeft="20sp"
+        android:paddingTop="5sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="5sp"
+        android:tag="@string/intent_val_type_multi_int_rand"
+        android:text="@string/text_int_rand"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/intSpecBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:background="@android:color/transparent"
+        android:onClick="handleOption"
+        android:paddingLeft="20sp"
+        android:paddingTop="5sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="5sp"
+        android:tag="@string/intent_val_type_multi_int_spec"
+        android:text="@string/text_int_spec"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intRandomBtn" />
+
+    <Button
+        android:id="@+id/localBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:background="@android:color/transparent"
+        android:onClick="handleOption"
+        android:paddingLeft="20sp"
+        android:paddingTop="5sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="5sp"
+        android:tag="@string/intent_val_type_multi_local"
+        android:text="@string/text_local"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intSpecBtn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

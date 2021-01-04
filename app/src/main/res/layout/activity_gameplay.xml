@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blank_bg"
+    tools:context=".ui.GamePlayActivity">
+
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="5dp"
+        app:columnCount="9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:rowCount="8">
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/numTextView8"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="9"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/u9"
+                android:tag="8"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/cntTextView8"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/numTextView7"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="8"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/u9"
+                android:tag="7"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/cntTextView7"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/numTextView6"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="7"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/u9"
+                android:tag="6"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/cntTextView6"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="3"
+            app:layout_row="0"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/numTextView5"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="6"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/u9"
+                android:tag="5"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/cntTextView5"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="4"
+            app:layout_row="0"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/numTextView4"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="5"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/u9"
+                android:tag="4"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/cntTextView4"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="5"
+            app:layout_row="0"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/numTextView3"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="4"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/u9"
+                android:tag="3"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/cntTextView3"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="6"
+            app:layout_row="0"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/numTextView2"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="3"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/u9"
+                android:tag="2"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/cntTextView2"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="7"
+            app:layout_row="0"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/numTextView1"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="2"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/u9"
+                android:tag="1"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/cntTextView1"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="8"
+            app:layout_row="0"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/numTextView0"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:text="1"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView0"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/u9"
+                android:tag="0"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/cntTextView0"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:rotation="180"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewS2"
+            android:layout_width="618dp"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/s0"
+            android:tag="0"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_columnSpan="9"
+            app:layout_row="3"
+            app:layout_rowSpan="1"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageViewS1"
+            android:layout_width="618dp"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/s0"
+            android:tag="0"
+            android:visibility="visible"
+            app:layout_column="0"
+            app:layout_columnSpan="9"
+            app:layout_row="4"
+            app:layout_rowSpan="1"
+            tools:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="8"
+            app:layout_columnSpan="1"
+            app:layout_row="5"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/cntTextView17"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/d9"
+                android:tag="17"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/numTextView17"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="7"
+            app:layout_columnSpan="1"
+            app:layout_row="5"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/cntTextView16"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/d9"
+                android:tag="16"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/numTextView16"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="6"
+            app:layout_columnSpan="1"
+            app:layout_row="5"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/cntTextView15"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/d9"
+                android:tag="15"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/numTextView15"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="5"
+            app:layout_columnSpan="1"
+            app:layout_row="5"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/cntTextView14"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/d9"
+                android:tag="14"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/numTextView14"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="4"
+            app:layout_columnSpan="1"
+            app:layout_row="5"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/cntTextView13"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/d9"
+                android:tag="13"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/numTextView13"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="3"
+            app:layout_columnSpan="1"
+            app:layout_row="5"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/cntTextView12"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/d9"
+                android:tag="12"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/numTextView12"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="2"
+            app:layout_columnSpan="1"
+            app:layout_row="5"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/cntTextView11"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/d9"
+                android:tag="11"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/numTextView11"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_columnSpan="1"
+            app:layout_row="5"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/cntTextView10"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/d9"
+                android:tag="10"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/numTextView10"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/holeGridLayout9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_columnSpan="1"
+            app:layout_row="5"
+            app:layout_rowSpan="3">
+
+            <TextView
+                android:id="@+id/cntTextView9"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="2dp"
+                android:gravity="center"
+                android:shadowColor="@android:color/background_light"
+                android:text="0"
+                android:textColor="@android:color/background_light"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="65dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:onClick="holeClicked"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/d9"
+                android:tag="9"
+                android:visibility="visible"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/numTextView9"
+                android:layout_width="65dp"
+                android:layout_height="15dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#FF9800"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/turnStickImageU"
+        android:layout_width="16dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="3dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/scoreLabel"
+        app:layout_constraintLeft_toRightOf="@id/gridLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/turnstick" />
+
+    <ImageView
+        android:id="@+id/turnStickImageD"
+        android:layout_width="16dp"
+        android:layout_height="170dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="2dp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toRightOf="@id/gridLayout"
+        app:layout_constraintTop_toTopOf="@id/scoreLabel"
+        app:srcCompat="@drawable/turnstick" />
+
+    <ImageView
+        android:id="@+id/soundBtn"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:onClick="soundBtnHandler"
+        app:layout_constraintStart_toEndOf="@+id/turnStickImageD"
+        app:layout_constraintTop_toTopOf="@+id/scoreLabel"
+        app:srcCompat="@drawable/music" />
+
+    <ImageView
+        android:id="@+id/compIsThinkingImg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreLabel"
+        app:layout_constraintStart_toEndOf="@+id/turnStickImageD" />
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:shadowColor="@android:color/background_light"
+        android:text="0 : 0"
+        android:textColor="@android:color/background_light"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/turnStickImageU"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/infoMsgTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Info"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="30sp"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/loadingPanel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/infoMsgTextView">
+
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/gameIdLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0C0101"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/gameIDTextView"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/int_spec_game_textview"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/gameIDEditText"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/gameIDOkBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="handleGameIDOKBtn"
+                android:text="@string/int_spec_game_ok_btn" />
+
+            <Button
+                android:id="@+id/gameIDCancelBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="handleGameIDCancelBtn"
+                android:text="@string/int_spec_game_cancel_btn" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

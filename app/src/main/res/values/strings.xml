@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">tk</string>
+
+    <!--Home-->
+    <string name="home_single">Single-Player</string>
+    <string name="home_multi">Multiplayer</string>
+    <string name="home_settings">Settings</string>
+    <!--Home-->
+
+    <!--LOGO-->
+    <string name="logo_9">9</string>
+    <string name="logo_toguz">Toguz</string>
+    <string name="logo_korgool">Korgool</string>
+    <!--LOGO-->
+
+    <!--Settings-->
+    <string name="level_rb">Difficulty:</string>
+    <string name="level_easy_rb">Easy</string>
+    <string name="level_medium_rb">Medium</string>
+    <string name="level_hard_rb">Hard</string>
+    <string name="start_rb">Start the game?</string>
+    <string name="start_yes_rb">Yes</string>
+    <string name="start_no_rb">No</string>
+    <!--Settings-->
+
+    <!--Game Options-->
+    <string name="text_new_game">New Game</string>
+    <string name="text_continue">Continue</string>
+
+    <string name="text_int_rand">Internet Random</string>
+    <string name="text_int_spec">Internet Specific</string>
+    <string name="text_local">Local</string>
+
+    <string name="text_create_game">Create Game</string>
+    <string name="text_join_game">Join Game</string>
+    <!--Game Options-->
+
+    <!-- intent -->
+    <string name="intent_key_mode">mode</string>
+    <string name="intent_key_type">type</string>
+    <string name="intent_key_option">option</string>
+
+
+    <string name="intent_val_mode_single">SINGLE</string>
+    <string name="intent_val_mode_multi">MULTI</string>
+    <string name="intent_val_type_multi_int_rand">INTRANDOM</string>
+    <string name="intent_val_type_multi_int_spec">INTSPEC</string>
+    <string name="intent_val_type_multi_local">MULTILOCAL</string>
+    <string name="intent_val_option_newgame">NEWGAME</string>
+    <string name="intent_val_option_continue">CONTINUE</string>
+    <string name="intent_val_option_creategame">CREATEGAME</string>
+    <string name="intent_val_option_joingame">JOINGAME</string>
+    <!--intent -->
+
+    <!--Int Spec Game-->
+    <string name="int_spec_game_textview">Insert game\'s ID:</string>
+    <string name="int_spec_game_ok_btn">Ok</string>
+    <string name="int_spec_game_cancel_btn">Cancel</string>
+    <!--Int Spec Game-->
+
+</resources>
